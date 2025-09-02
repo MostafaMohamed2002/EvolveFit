@@ -97,7 +97,6 @@ jobs:
             PROVISIONING_PROFILE=""
 
       - name: Upload iOS App Artifact
-        if: github.event_name == 'push'
         uses: actions/upload-artifact@v4
         with:
           name: ios-app-simulator
